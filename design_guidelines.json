@@ -1,0 +1,176 @@
+{
+  "theme": "Dark",
+  "archetype": "7 (Electric & Neon / Futuristic)",
+  "rationale": "High-energy, quantum computing-inspired futuristic developer/researcher portfolio with deep space navy and cyan/violet neon accents.",
+  "colors": {
+    "background": {
+      "base": "#050A18",
+      "surface_glass": "rgba(255, 255, 255, 0.03)",
+      "surface_glass_hover": "rgba(0, 229, 255, 0.08)",
+      "card": "#0A1128"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "muted": "#64748B"
+    },
+    "accents": {
+      "cyan": "#00E5FF",
+      "violet": "#7C3AED",
+      "magenta": "#D946EF",
+      "border_dim": "rgba(255, 255, 255, 0.1)",
+      "border_glow": "rgba(0, 229, 255, 0.3)"
+    },
+    "gradients": {
+      "primary_text": "linear-gradient(to right, #00E5FF, #7C3AED)",
+      "orb_cyan": "radial-gradient(circle, rgba(0,229,255,0.4) 0%, rgba(0,0,0,0) 70%)",
+      "orb_purple": "radial-gradient(circle, rgba(124,58,237,0.4) 0%, rgba(0,0,0,0) 70%)",
+      "orb_magenta": "radial-gradient(circle, rgba(217,70,239,0.3) 0%, rgba(0,0,0,0) 70%)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Space Grotesk', sans-serif",
+      "body": "'JetBrains Mono', monospace",
+      "accent": "'JetBrains Mono', monospace"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl lg:text-7xl tracking-tighter font-bold",
+      "h2": "text-3xl sm:text-4xl lg:text-5xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl font-semibold",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "small": "text-sm tracking-wide",
+      "overline": "text-xs tracking-[0.2em] uppercase font-bold text-cyan-400"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 sm:px-8 lg:px-12",
+    "section_padding": "py-24 lg:py-32",
+    "gap": {
+      "grid": "gap-6 lg:gap-8",
+      "content": "gap-6",
+      "chips": "gap-3"
+    }
+  },
+  "surfaces_and_glassmorphism": {
+    "recipe": {
+      "background": "bg-white/[0.03] hover:bg-white/[0.05] transition-colors",
+      "backdrop_blur": "backdrop-blur-xl",
+      "border": "border border-white/10 hover:border-cyan-400/30",
+      "shadow": "shadow-[0_8px_32px_rgba(0,0,0,0.4)]",
+      "glow_shadow": "shadow-[0_0_20px_rgba(0,229,255,0.15)]"
+    }
+  },
+  "components": {
+    "navbar": {
+      "style": "fixed top-0 w-full z-50 backdrop-blur-md bg-[#050A18]/70 border-b border-white/10",
+      "links": "text-sm text-slate-300 hover:text-cyan-400 transition-colors",
+      "active_state": "text-cyan-400 border-b-2 border-cyan-400 font-medium"
+    },
+    "hero": {
+      "typewriter_sequence": {
+        "step_1": { "text": "Hi...", "duration": 1.0, "delay": 0.5 },
+        "step_2": { "text": "Welcome", "duration": 1.0, "delay": 2.0 },
+        "step_3": { "text": "Kanhaiya Mehta", "effect": "fade_in_gradient_glow", "delay": 3.5 }
+      },
+      "rotating_subtitle": ["Full-Stack Developer", "AI/ML Engineer", "Quantum Computing Researcher"],
+      "background": "quantum_circuit"
+    },
+    "achievement_card": {
+      "style": "relative overflow-hidden rounded-xl bg-white/[0.02] border border-white/10 p-8",
+      "animation": "hover:scale-[1.02] hover:border-violet-500/50 transition-all",
+      "glow_effect": "absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 opacity-0 hover:opacity-100 transition-opacity",
+      "count_up": "text-4xl font-bold font-heading text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-400"
+    },
+    "skill_chip": {
+      "style": "px-4 py-2 rounded-full border border-white/10 bg-white/[0.03] text-sm text-slate-300 hover:bg-cyan-500/10 hover:border-cyan-500/30 hover:text-cyan-300 transition-all cursor-default"
+    },
+    "project_card": {
+      "style": "group relative overflow-hidden rounded-2xl glassmorphism cursor-pointer",
+      "image_container": "overflow-hidden",
+      "image_hover": "group-hover:scale-105 transition-transform duration-500",
+      "content": "p-6",
+      "modal_specs": {
+        "overlay": "fixed inset-0 z-[100] bg-[#050A18]/80 backdrop-blur-sm",
+        "content": "relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-3xl max-h-[85vh] overflow-y-auto bg-[#0A1128] border border-white/10 rounded-2xl p-8 shadow-[0_0_40px_rgba(0,229,255,0.1)]"
+      }
+    },
+    "research_card": {
+      "style": "w-full rounded-2xl border border-white/10 bg-[#0A1128] p-8 md:p-10 relative overflow-hidden",
+      "paper_texture": "absolute inset-0 opacity-[0.03] mix-blend-overlay",
+      "stat_badges": "inline-flex items-center gap-2 px-3 py-1 rounded-md bg-white/5 border border-white/10 text-xs text-slate-300 font-mono",
+      "title": "text-2xl md:text-3xl font-heading text-white mb-4",
+      "authors": "text-sm text-cyan-400 font-mono mb-6"
+    },
+    "contact": {
+      "icon_link": "p-4 rounded-full bg-white/[0.03] border border-white/10 text-slate-300 hover:text-cyan-400 hover:bg-cyan-400/10 hover:border-cyan-400/30 transition-all hover:-translate-y-1",
+      "cv_button": "px-8 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-[#050A18] font-bold font-mono transition-colors shadow-[0_0_20px_rgba(0,229,255,0.4)]"
+    }
+  },
+  "animations": {
+    "framer_motion": {
+      "easing": "[0.16, 1, 0.3, 1]",
+      "duration": "0.6",
+      "stagger_children": "0.1",
+      "fade_up": {
+        "initial": { "opacity": 0, "y": 40 },
+        "animate": { "opacity": 1, "y": 0 }
+      },
+      "fade_in": {
+        "initial": { "opacity": 0 },
+        "animate": { "opacity": 1 }
+      }
+    }
+  },
+  "background_effects": {
+    "quantum_circuit": {
+      "type": "canvas_or_css",
+      "opacity": "0.12",
+      "wire_count": "5",
+      "wire_color": "rgba(0, 229, 255, 0.3)",
+      "gate_symbols": ["H", "X", "CX", "RZ"],
+      "gate_style": "border border-cyan-500/50 bg-[#050A18] text-cyan-500 text-xs font-mono px-2 py-1",
+      "pulse_animation": "linear moving dot/glow from left to right along wires"
+    },
+    "gradient_orbs": {
+      "type": "css_divs",
+      "blur": "blur-[120px] md:blur-[160px]",
+      "opacity": "0.3",
+      "orbs": [
+        { "color": "bg-cyan-500", "size": "w-[300px] h-[300px]", "animation": "drift slow top-left" },
+        { "color": "bg-violet-600", "size": "w-[400px] h-[400px]", "animation": "drift slow bottom-right" },
+        { "color": "bg-magenta-500", "size": "w-[250px] h-[250px]", "animation": "drift slow center" }
+      ]
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use standard imports from lucide-react. Ensure strokeWidth=1.5 for a sleeker, tech feel."
+  },
+  "media": {
+    "project_thumbnails": [
+      {
+        "url": "https://images.unsplash.com/photo-1637166185518-058f5896a2e9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGZ1dHVyaXN0aWMlMjB0ZWNoJTIwcXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfHx8fDE3ODMwMjA2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "project_thumbnail",
+        "description": "Abstract quantum hallway with blue/white lights"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1653549893012-b8b4fbe97630?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGZ1dHVyaXN0aWMlMjB0ZWNoJTIwcXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfHx8fDE3ODMwMjA2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "project_thumbnail",
+        "description": "Circular glowing quantum/AI object"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1634834300387-8015d9fb7550?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGZ1dHVyaXN0aWMlMjB0ZWNoJTIwcXVhbnR1bSUyMGNvbXB1dGluZ3xlbnwwfHx8fDE3ODMwMjA2Mjd8MA&ixlib=rb-4.1.0&q=85",
+        "category": "project_thumbnail",
+        "description": "Neon light tunnel"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, lucide-react, react-countup (for achievements).",
+    "Do NOT use Space Grotesk for Body text; restrict to JetBrains Mono for Body/Accents.",
+    "Ensure `data-testid` is added to all buttons, links, and form inputs for testing.",
+    "Implement the Quantum Circuit as a lightweight Canvas or absolute positioning CSS divs in the Hero section.",
+    "Implement drifing orbs as fixed/absolute divs with heavy blur and translate animations behind the main layout."
+  ]
+}
