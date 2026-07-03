@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Download, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Twitter, Mail, Download, ArrowUpRight } from "lucide-react";
 import { PROFILE } from "../data/portfolio";
 
 const ICON_LINKS = [
     { icon: Github, label: "GitHub", href: PROFILE.github, testid: "contact-github" },
     { icon: Linkedin, label: "LinkedIn", href: PROFILE.linkedin, testid: "contact-linkedin" },
+    { icon: Twitter, label: "X (Twitter)", href: PROFILE.twitter, testid: "contact-twitter" },
     { icon: Mail, label: "Email", href: `mailto:${PROFILE.email}`, testid: "contact-email" },
 ];
 
