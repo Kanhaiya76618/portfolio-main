@@ -6,7 +6,7 @@ export const PROFILE = {
     email: "kanhaiyakumar76618@gmail.com",
     github: "https://github.com/Kanhaiya76618",
     linkedin: "https://linkedin.com/in/kanhaiya-mehta-b70aa7324",
-    cv: "#",
+    cv: "Kanhaiya_Mehta_CV.pdf",
 };
 
 export const ABOUT = `I'm Kanhaiya Mehta, a full-stack developer who also works on AI/ML systems, with a major interest in quantum computing. I'm a B.Tech CSE student at IIIT Dharwad (CGPA 8.10/10) with a Minor in Quantum Information Science (Minor CGPA 10/10). I build production-grade web platforms, multi-agent AI systems, and quantum optimization research — mostly through competitive hackathons at national and international level.`;
