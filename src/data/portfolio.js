@@ -122,7 +122,7 @@ export const PROJECTS = [
             { label: "HF Space", href: "https://huggingface.co/spaces/Anurag137/enterprise-ops-arena" },
             { label: "Model", href: "https://huggingface.co/Anurag137/enterprise-ops-lora" },
             { label: "GitHub", href: "https://github.com/anuragverma025/Meta-Hackathon" },
-            { label: "Blog", href: "https://github.com/anuragverma025/Meta-Hackathon/blob/main/BLOG.md" },
+            { label: "Blog", href: "https://github.com/anuragverma025/Meta-Hackathon/blob/main/enterprise_ops/BLOG.md" },
         ],
         badge: "Top 800 · 32,000+ teams",
         color: "from-violet-500/30 to-magenta-500/30",

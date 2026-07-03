@@ -20,3 +20,6 @@ yarn-error.log*
 
 # Deployment
 .vercel
+
+# Claude Code local config
+.claude/
