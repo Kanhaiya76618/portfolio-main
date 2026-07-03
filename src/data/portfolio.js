@@ -36,22 +36,6 @@ export const ACHIEVEMENTS = [
         detail: "Advanced to Round 2 with EnterpriseOps Arena.",
         accent: "from-violet-500/40 to-magenta-500/40",
     },
-    {
-        rank: "NDCG@10 · 0.928",
-        emoji: "🏅",
-        title: "India Runs Hackathon 2026",
-        subtitle: "Redrob AI × Hack2Skill",
-        detail: "Candidate Ranking Engine — three-tier verification funnel on 100K candidates.",
-        accent: "from-cyan-400/40 to-teal-500/40",
-    },
-    {
-        rank: "Certified",
-        emoji: "📜",
-        title: "IBM Quantum Certification",
-        subtitle: "Basics of Quantum Information",
-        detail: "Formal certification from IBM Quantum learning track.",
-        accent: "from-fuchsia-500/40 to-violet-500/40",
-    },
 ];
 
 export const SKILL_GROUPS = [
@@ -162,24 +146,6 @@ export const PROJECTS = [
         links: [],
         badge: "3rd Place",
         color: "from-amber-500/30 to-orange-500/30",
-    },
-    {
-        id: "candidate-ranking",
-        name: "Candidate Ranking Engine",
-        tagline: "India Runs Hackathon 2026",
-        tag: "Redrob AI × Hack2Skill",
-        summary: "Intelligent candidate discovery & ranking engine for 100K candidates using a three-tier verification funnel. NDCG@10: 0.928.",
-        overview: "Intelligent candidate discovery & ranking engine for 100K candidates using a three-tier verification funnel: integrity gate → semantic recall → cross-encoder rerank. Achieved NDCG@10 of 0.928 with zero honeypot profiles in the top 100.",
-        highlights: [
-            "100K-candidate corpus",
-            "3-tier funnel: integrity gate → semantic recall → cross-encoder rerank",
-            "NDCG@10: 0.928",
-            "Zero honeypot profiles in top 100",
-        ],
-        tech: ["Python", "Semantic search", "Cross-encoder reranking"],
-        links: [],
-        badge: "NDCG@10 · 0.928",
-        color: "from-fuchsia-500/30 to-violet-500/30",
     },
 ];
 
