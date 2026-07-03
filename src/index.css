@@ -28,25 +28,7 @@ code, .font-mono {
 
 @layer base {
     :root {
-        --background: 224 71% 4%;
-        --foreground: 210 40% 98%;
-        --card: 224 71% 4%;
-        --card-foreground: 210 40% 98%;
-        --popover: 224 71% 4%;
-        --popover-foreground: 210 40% 98%;
-        --primary: 187 100% 50%;
-        --primary-foreground: 224 71% 4%;
-        --secondary: 217 33% 17%;
-        --secondary-foreground: 210 40% 98%;
-        --muted: 217 33% 17%;
-        --muted-foreground: 215 20% 65%;
-        --accent: 217 33% 17%;
-        --accent-foreground: 210 40% 98%;
-        --destructive: 0 63% 31%;
-        --destructive-foreground: 210 40% 98%;
         --border: 217 33% 20%;
-        --input: 217 33% 20%;
-        --ring: 187 100% 50%;
         --radius: 0.75rem;
     }
 }
@@ -108,6 +90,11 @@ code, .font-mono {
     animation: gradient-shift 6s ease-in-out infinite;
 }
 
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
 .glow-cyan {
     box-shadow: 0 0 24px rgba(0, 229, 255, 0.35), 0 0 60px rgba(0, 229, 255, 0.15);
 }
@@ -156,6 +143,13 @@ code, .font-mono {
     pointer-events: none;
 }
 
+@keyframes circuit-flow {
+    0% { transform: translateX(-20%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateX(120vw); opacity: 0; }
+}
+
 .circuit-gate {
     background: rgba(5, 10, 24, 0.85);
     border: 1px solid rgba(0, 229, 255, 0.5);
@@ -180,37 +174,5 @@ code, .font-mono {
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
         scroll-behavior: auto !important;
-    }
-}
-
-/* Debug wrapper support (preserved from template) */
-@layer base {
-    [data-debug-wrapper="true"] {
-        display: contents !important;
-    }
-    [data-debug-wrapper="true"] > * {
-        margin-left: inherit;
-        margin-right: inherit;
-        margin-top: inherit;
-        margin-bottom: inherit;
-        padding-left: inherit;
-        padding-right: inherit;
-        padding-top: inherit;
-        padding-bottom: inherit;
-        column-gap: inherit;
-        row-gap: inherit;
-        gap: inherit;
-        border-left-width: inherit;
-        border-right-width: inherit;
-        border-top-width: inherit;
-        border-bottom-width: inherit;
-        border-left-style: inherit;
-        border-right-style: inherit;
-        border-top-style: inherit;
-        border-bottom-style: inherit;
-        border-left-color: inherit;
-        border-right-color: inherit;
-        border-top-color: inherit;
-        border-bottom-color: inherit;
     }
 }
